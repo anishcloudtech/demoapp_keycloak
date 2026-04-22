@@ -1,0 +1,69 @@
+/* =====================================================
+   CloudTech – Keycloak Admin Console Custom Theme
+   Targets: sidebar background color + logo
+   ===================================================== */
+
+/* ---------- SIDEBAR BACKGROUND ---------- */
+/* PF v5 nav / sidebar used in KC 26 */
+.pf-v5-c-page__sidebar,
+.pf-v5-c-page__sidebar-body,
+nav[class*="pf-v5-c-nav"] {
+    background-color: #0d1029 !important;
+    border-right: 1px solid rgba(110, 231, 247, 0.10) !important;
+}
+
+/* Sidebar nav items */
+.pf-v5-c-nav__link {
+    color: #94a3b8 !important;
+}
+
+.pf-v5-c-nav__link:hover,
+.pf-v5-c-nav__link:focus {
+    background-color: rgba(110, 231, 247, 0.07) !important;
+    color: #e2e8f0 !important;
+}
+
+/* Active / current nav item */
+.pf-v5-c-nav__item.pf-m-current > .pf-v5-c-nav__link,
+.pf-v5-c-nav__link.pf-m-current {
+    background-color: rgba(110, 231, 247, 0.12) !important;
+    color: #6ee7f7 !important;
+    border-left: 3px solid #6ee7f7 !important;
+    font-weight: 600 !important;
+}
+
+/* Nav section titles */
+.pf-v5-c-nav__section-title {
+    color: #ffffff !important;
+    font-size: 0.7rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+}
+
+/* Nav group toggle (expandable sections) */
+.pf-v5-c-nav__toggle-icon {
+    color: #ffffff !important;
+}
+
+/* ---------- TOP MASTHEAD BAR ---------- */
+.pf-v5-c-masthead {
+    background-color: #0a0d1a !important;
+    border-bottom: 1px solid rgba(110, 231, 247, 0.12) !important;
+}
+
+.pf-v5-c-masthead__main {
+    background-color: #0a0d1a !important;
+}
+
+/* ---------- LOGO SWAP ---------- */
+/* Hides the default Keycloak wordmark/logo and replaces with cts.svg  */
+/* Place cts.svg inside: themes/cloudtech-admin/admin/resources/img/logo.svg */
+.pf-v5-c-masthead .pf-v5-c-brand {
+    content: url(../img/logo.svg) !important;
+    height: 34px !important;
+    width: auto !important;
+}
+
+.pf-v5-c-masthead .pf-v5-c-brand img {
+    display: none !important;
+}

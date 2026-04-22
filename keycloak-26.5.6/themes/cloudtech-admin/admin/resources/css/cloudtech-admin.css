@@ -1,0 +1,113 @@
+/* =============================================
+   CloudTech Admin Theme - Keycloak
+   ============================================= */
+
+:root {
+  --pf-global--primary-color--100: #1a73e8;
+  --pf-global--primary-color--200: #1557b0;
+  --pf-global--link--Color: #1a73e8;
+  --pf-global--link--Color--hover: #1557b0;
+  --ct-sidebar-bg: #318b0b;
+  --ct-sidebar-text: #c9d1d9;
+  --ct-sidebar-hover: #1a73e8;
+  --ct-header-bg: #ba481b;
+  --ct-accent: #1a73e8;
+}
+
+/* ── Sidebar ── */
+.pf-c-nav,
+.pf-c-page__sidebar,
+nav[class*="pf-c-nav"] {
+  background-color: var(--ct-sidebar-bg) !important;
+}
+
+.pf-c-nav__link {
+  color: var(--ct-sidebar-text) !important;
+  font-size: 0.9rem;
+}
+
+.pf-c-nav__link:hover,
+.pf-c-nav__link.pf-m-current {
+  color: #ffffff !important;
+  background-color: var(--ct-sidebar-hover) !important;
+  border-radius: 6px;
+}
+
+.pf-c-nav__section-title {
+  color: #6e7f96 !important;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── Header / Masthead ── */
+.pf-c-page__header,
+.pf-c-masthead {
+  background-color: var(--ct-header-bg) !important;
+  border-bottom: 1px solid #1a73e8 !important;
+}
+
+.pf-c-masthead__brand span,
+.pf-c-masthead__brand,
+.pf-c-title {
+  color: #ffffff !important;
+}
+
+/* ── Buttons ── */
+.pf-c-button.pf-m-primary {
+  background-color: var(--ct-accent) !important;
+  border-color: var(--ct-accent) !important;
+  border-radius: 6px;
+}
+
+.pf-c-button.pf-m-primary:hover {
+  background-color: var(--ct-sidebar-hover) !important;
+}
+
+/* ── Cards ── */
+.pf-c-card {
+  border-radius: 10px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  border: 1px solid #e8edf2 !important;
+}
+
+.pf-c-card__header {
+  border-bottom: 2px solid var(--ct-accent) !important;
+}
+
+/* ── Tables ── */
+.pf-c-table thead {
+  background-color: #f0f4ff !important;
+}
+
+.pf-c-table thead th {
+  color: #1a73e8 !important;
+  font-weight: 600;
+}
+
+.pf-c-table tbody tr:hover {
+  background-color: #f5f8ff !important;
+}
+
+/* ── Tabs ── */
+.pf-c-tabs__link.pf-m-current,
+.pf-c-tabs__link[aria-selected="true"] {
+  color: var(--ct-accent) !important;
+  border-bottom-color: var(--ct-accent) !important;
+}
+
+/* ── Badges & Labels ── */
+.pf-c-badge {
+  background-color: var(--ct-accent) !important;
+  border-radius: 20px;
+}
+
+/* ── Realm selector ── */
+.pf-c-select__toggle {
+  color: #fff !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f1923; }
+::-webkit-scrollbar-thumb { background: #1a73e8; border-radius: 3px; }
