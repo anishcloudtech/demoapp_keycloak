@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const jwksClient = require('jwks-rsa');
 
 const KEYCLOAK_URL = process.env.KEYCLOAK_URL || 'http://localhost:8080';
-const KEYCLOAK_REALM = process.env.KEYCLOAK_REALM || 'qa-corenroll';
+const KEYCLOAK_REALM = process.env.KEYCLOAK_REALM || 'corenroll';
 
 console.log("KEYCLOAK_URL:", KEYCLOAK_URL);
 console.log("Keycloak realms",KEYCLOAK_REALM);

@@ -83,7 +83,7 @@ router.post('/', verifyToken, requireRole('author', 'admin'), async (req, res) =
   const newPost = {
     id: posts.length + 1,
     title,
-    author, 
+    author,
     date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
     excerpt: excerpt || '',
     category: category || 'General',

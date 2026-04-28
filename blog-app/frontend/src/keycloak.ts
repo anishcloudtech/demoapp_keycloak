@@ -1,8 +1,8 @@
 import Keycloak from 'keycloak-js';
 
 const keycloak = new Keycloak({
-  url: 'https://qa-sso.corenroll.com',
-  realm: 'qa-corenroll',
+  url: 'http://localhost:8080',
+  realm: 'corenroll',
   clientId: 'blog-app',
 });
 
